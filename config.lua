@@ -221,13 +221,8 @@ lvim.plugins = {
     -- Only required for debugging
     requires = { { "nvim-lua/plenary.nvim", "mfussenegger/nvim-dap" } }
   },
- {
-  'tanvirtin/vgit.nvim',
-  requires = {
-    'nvim-lua/plenary.nvim'
-  },
-    { 'liuchengxu/vim-clap' }
-}  -- {
+  { 'liuchengxu/vim-clap' }
+  -- {
   --   "olimorris/persisted.nvim",
   --   --module = "persisted", -- For lazy loading
   --   config = function()
