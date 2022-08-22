@@ -218,7 +218,14 @@ lvim.plugins = {
     'ericpubu/lsp_codelens_extensions.nvim',
     -- Only required for debugging
     requires = { { "nvim-lua/plenary.nvim", "mfussenegger/nvim-dap" } }
-  } -- {
+  },
+ {
+  'tanvirtin/vgit.nvim',
+  requires = {
+    'nvim-lua/plenary.nvim'
+  },
+    { 'liuchengxu/vim-clap' }
+}  -- {
   --   "olimorris/persisted.nvim",
   --   --module = "persisted", -- For lazy loading
   --   config = function()
@@ -247,7 +254,7 @@ lvim.plugins = {
 }
 
 require("nvim-surround").setup()
-require("neoscroll").setup()
+-- require("neoscroll").setup()
 require('onedark').setup {
 }
 require("diffview").setup {
@@ -277,6 +284,7 @@ require("indent_blankline").setup {
 
 }
 require("codelens_extensions").setup()
+require('vgit').setup()
 
 
 -- should be set after the imports
