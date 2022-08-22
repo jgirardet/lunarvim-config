@@ -281,7 +281,6 @@ require("indent_blankline").setup {
 
 }
 require("codelens_extensions").setup()
-require('vgit').setup()
 
 
 -- should be set after the imports
