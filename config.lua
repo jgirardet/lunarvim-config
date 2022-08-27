@@ -41,6 +41,7 @@ lvim.keys.normal_mode["mù"] =
 "vip<ESC><CMD>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>"
 lvim.keys.normal_mode["§"] = "<ESC><CMD>ToggleTerm<CR>"
 lvim.keys.normal_mode["é"] = "<ESC><CMD>Telescope buffers<CR>"
+lvim.keys.normal_mode["ç"] = "<ESC>:b#<CR>"
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -65,8 +66,8 @@ lvim.builtin.telescope.defaults.mappings = {
 }
 
 -- Use which-key to add extra bindings with the leader-key prefix
-lvim.builtin.which_key.mappings["n"] = { "<ESC><CMD>:bprev<CR>", "Buffer Next" }
-lvim.builtin.which_key.mappings[","] = { "<ESC><CMD>:bnext<CR>", "Buffer Next" }
+lvim.builtin.which_key.mappings[","] = { "<ESC><CMD>:bprev<CR>", "Buffer Prev" }
+lvim.builtin.which_key.mappings[";"] = { "<ESC><CMD>:bnext<CR>", "Buffer Next" }
 
 -- lvim.builtin.which_key.mappings["t"] = {
 --   name = "+Trouble",
